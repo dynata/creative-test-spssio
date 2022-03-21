@@ -7,3 +7,5 @@
 /sandbox
 /.envrc
 /spec/examples.txt
+
+.DS_Store
