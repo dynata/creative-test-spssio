@@ -88,6 +88,14 @@ module SPSS
       end
     end
 
+    def to_a
+      number_of_cases.times.map do
+        durp = self.dup
+        cr = CaseRecord.new(durp)
+        API.read_case_record(durp.handle)
+      end
+    end
+
     def variable_missing_values(name)
       if variable_sizes[name].zero?
         API.get_var_n_missing_values(handle, name)
