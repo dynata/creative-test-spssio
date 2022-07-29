@@ -93,6 +93,7 @@ module SPSS
         durp = self.dup
         cr = CaseRecord.new(durp)
         API.read_case_record(durp.handle)
+        cr
       end
     end
 
