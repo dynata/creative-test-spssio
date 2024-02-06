@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
   s.name = "spssio"
   s.summary = "Ruby bindings for spssdio"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.author = "Scott Brickner"
   s.files = [
     "lib/spssio.rb",
